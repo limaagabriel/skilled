@@ -1,0 +1,15 @@
+{
+  "name": "skilled",
+  "version": "0.1.0",
+  "description": "Harness-agnostic agent skills, pluggable into the pi coding agent and others.",
+  "keywords": [
+    "pi-package",
+    "pi-coding-agent",
+    "skills"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  }
+}
