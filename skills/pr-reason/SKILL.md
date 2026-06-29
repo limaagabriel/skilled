@@ -64,7 +64,7 @@ Read the file around `line` (skip file-context reasoning if drift was detected �
 2. **Good engineering practice generally?** — Sound regardless of this repo: correctness, safety, readability, performance.
 3. **Worth an AGENTS.md instruction?** — Only if the lesson is *general and recurring*, not a one-off. A repeated "use guard clauses" → yes. A typo fix → no.
 
-Many comments (5+) → dispatch one subagent per comment for context isolation and run them in parallel. Few → reason inline.
+Reason inline. Each comment is a small, independent file peek — subagent isolation buys nothing and scatters redundant reads. If a single comment needs codebase-wide verification (does this symbol/API exist anywhere), dispatch one focused agent for *that* check only.
 
 ### 4. Report
 
