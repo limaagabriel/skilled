@@ -1,0 +1,34 @@
+{
+  "name": "skilled",
+  "version": "0.1.1",
+  "description": "Harness-agnostic agent skills, pluggable into Claude Code, Codex, the pi coding agent, and others.",
+  "author": {
+    "name": "limaagabriel",
+    "url": "https://github.com/limaagabriel"
+  },
+  "homepage": "https://github.com/limaagabriel/skilled",
+  "repository": "https://github.com/limaagabriel/skilled",
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "pi-coding-agent",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Skilled",
+    "shortDescription": "Harness-agnostic skills for coding agents.",
+    "longDescription": "A collection of portable coding-agent skills that can be loaded by Claude Code, Codex, the pi coding agent, and other compatible harnesses.",
+    "developerName": "limaagabriel",
+    "category": "Productivity",
+    "capabilities": [
+      "Skills"
+    ],
+    "websiteURL": "https://github.com/limaagabriel/skilled",
+    "defaultPrompt": [
+      "Analyze unresolved PR review comments."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
