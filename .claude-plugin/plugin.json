@@ -1,5 +1,5 @@
 {
   "name": "skilled",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Harness-agnostic agent skills, pluggable into Claude Code, the pi coding agent, and others."
 }
