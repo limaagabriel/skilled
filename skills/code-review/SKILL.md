@@ -63,6 +63,7 @@ If the change is unambiguously trivial — a typo/copy fix, a tiny no-behavior-c
 The single source of truth for reviewing doctrine is `references/reviewer.md`, resolved relative to this skill's own directory. **Portability rule: read that file's content yourself and inject it into the dispatched reviewer's prompt — never tell the subagent to open the path itself.** This skill may be installed anywhere, and the dispatched process's cwd is the user's project, not this repo, so a relative path won't resolve for it.
 
 - **Claude Code (has subagents):** dispatch the Agent tool with `subagent_type: code-reviewer`, prompt = full contents of `references/reviewer.md` + the change description + the diff (+ any triggered specialist file contents from step 5, each clearly labeled).
+- **Codex CLI (has subagents):** invoke the Codex agent role `code-reviewer` (from `.codex/agents/code-reviewer.toml`; install per `.codex/agents/README.md`) with the same prompt. The role is read-only via `sandbox_mode`; spawn a fresh role each pass, never resume one.
 - **pi / a harness without custom subagents:** spawn a fresh read-only process: `pi -p --exclude-tools write,edit "<reviewer.md contents + description + diff>"`. The `--exclude-tools write,edit` flag is what enforces read-only.
 - **Never review inline in the coordinator's own context.** A reviewer that shares the builder's context isn't independent — that independence is the entire point of this skill.
 
