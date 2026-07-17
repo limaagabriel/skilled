@@ -1,0 +1,15 @@
+{
+  "name": "skilled",
+  "owner": {
+    "name": "limaagabriel",
+    "url": "https://github.com/limaagabriel"
+  },
+  "plugins": [
+    {
+      "name": "skilled",
+      "source": "./",
+      "description": "Harness-agnostic agent skills, pluggable into Claude Code, Codex, the pi coding agent, and others.",
+      "category": "Productivity"
+    }
+  ]
+}
