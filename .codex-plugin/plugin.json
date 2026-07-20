@@ -1,6 +1,6 @@
 {
   "name": "skilled",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Harness-agnostic agent skills, pluggable into Claude Code, Codex, the pi coding agent, and others.",
   "author": {
     "name": "limaagabriel",
